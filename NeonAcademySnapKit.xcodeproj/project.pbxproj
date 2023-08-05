@@ -13,6 +13,7 @@
 		5262AC532A73B518005F0EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5262AC512A73B518005F0EDB /* Main.storyboard */; };
 		5262AC552A73B51A005F0EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5262AC542A73B51A005F0EDB /* Assets.xcassets */; };
 		5262AC582A73B51A005F0EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5262AC562A73B51A005F0EDB /* LaunchScreen.storyboard */; };
+		5262AC612A73BA45005F0EDB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5262AC602A73BA45005F0EDB /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5262AC612A73BA45005F0EDB /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = NeonAcademySnapKit;
+			packageProductDependencies = (
+				5262AC602A73BA45005F0EDB /* SnapKit */,
+			);
 			productName = NeonAcademySnapKit;
 			productReference = 5262AC482A73B518005F0EDB /* NeonAcademySnapKit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 5262AC3F2A73B518005F0EDB;
+			packageReferences = (
+				5262AC5F2A73BA45005F0EDB /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 5262AC492A73B518005F0EDB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,7 +299,6 @@
 				INFOPLIST_FILE = NeonAcademySnapKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +325,6 @@
 				INFOPLIST_FILE = NeonAcademySnapKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5262AC5F2A73BA45005F0EDB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5262AC602A73BA45005F0EDB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5262AC5F2A73BA45005F0EDB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5262AC402A73B518005F0EDB /* Project object */;
 }
